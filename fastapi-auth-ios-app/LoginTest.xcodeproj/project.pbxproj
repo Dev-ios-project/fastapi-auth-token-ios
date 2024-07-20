@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E6969BF2C4BD48800D20ACB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6969BE2C4BD48800D20ACB /* RegisterViewController.swift */; };
 		9E8082B22C2CBC62004C65DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8082B12C2CBC62004C65DB /* AppDelegate.swift */; };
 		9E8082B42C2CBC62004C65DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8082B32C2CBC62004C65DB /* SceneDelegate.swift */; };
 		9E8082B62C2CBC62004C65DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8082B52C2CBC62004C65DB /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E6969BE2C4BD48800D20ACB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9E8082AE2C2CBC62004C65DB /* LoginTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8082B12C2CBC62004C65DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E8082B32C2CBC62004C65DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			children = (
 				9E8082D02C2CBDD2004C65DB /* MainViewController.swift */,
 				9E8082CE2C2CBD91004C65DB /* LoginViewController.swift */,
+				9E6969BE2C4BD48800D20ACB /* RegisterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				9E8082D12C2CBDD2004C65DB /* MainViewController.swift in Sources */,
 				9E8082CF2C2CBD91004C65DB /* LoginViewController.swift in Sources */,
 				9E8082C92C2CBC9F004C65DB /* AuthViewModel.swift in Sources */,
+				9E6969BF2C4BD48800D20ACB /* RegisterViewController.swift in Sources */,
 				9E8082B62C2CBC62004C65DB /* ViewController.swift in Sources */,
 				9E8082B22C2CBC62004C65DB /* AppDelegate.swift in Sources */,
 				9E8082B42C2CBC62004C65DB /* SceneDelegate.swift in Sources */,

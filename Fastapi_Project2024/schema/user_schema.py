@@ -28,3 +28,6 @@ class TokenResponse(BaseModel):
 
 class RegisterResponse(BaseModel):
     message: str    
+
+class ErrorRsponse(BaseModel): 
+    message: str   

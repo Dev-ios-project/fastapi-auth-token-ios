@@ -28,7 +28,7 @@ def create_user(user: user_schema.UserCreate, db: Session = Depends(get_db)):
     
 
 
-# @user_Router.post("/user/create", response_model=user_schema.TokenResponse)
+# @user_Router.post("/create", response_model=user_schema.TokenResponse)
 # def create_user(user: user_schema.UserCreate, db: Session = Depends(get_db)):
 #     # Check if user already exists
 #     db_user = user_crud.get_user_by_username(db, username=user.username)

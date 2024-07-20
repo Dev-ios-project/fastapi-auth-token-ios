@@ -5,7 +5,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-
+    @IBOutlet weak var signupLabel: UILabel!
+    
     private var viewModel = AuthViewModel()
     private var cancellables: Set<AnyCancellable> = []
 
@@ -20,6 +21,12 @@ class LoginViewController: UIViewController {
                 }
             }
             .store(in: &cancellables)
+        
+        // Add tap gesture recognizer tonthe Label
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(registerLabelTapped))
+        signupLabel.isUserInteractionEnabled=true
+        signupLabel.addGestureRecognizer(tapGesture)
+        
     }
 
     @IBAction func loginButtonTapped(_ sender: Any) {
@@ -37,6 +44,12 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    
+    @objc func registerLabelTapped(){
+        performSegue(withIdentifier: "ShowRegister", sender: self)
+    }
+    
+    
 
     private func navigateToMainView() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
